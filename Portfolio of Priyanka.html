@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanka Pawar | Portfolio</title>
+    <!-- Tailwind CSS for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Header / Hero Section -->
+    <header class="bg-slate-900 text-white pt-24 pb-20 px-6 text-center shadow-lg">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4">
+                PRIYANKA PAWAR
+            </h1>
+            <p class="text-brand-500 font-semibold tracking-widest uppercase mb-8 text-sm md:text-base">
+                AI & Data Engineering Professional
+            </p>
+            <div class="flex flex-wrap justify-center gap-6 text-slate-300">
+                <a href="mailto:pawarpreeyanka21@gmail.com" class="hover:text-white hover:-translate-y-1 transition-all duration-300 flex items-center gap-2 text-lg">
+                    <i class="fas fa-envelope"></i>
+                    <span class="hidden sm:inline text-sm">Email</span>
+                </a>
+                <a href="https://linkedin.com/in/priyanka-p-6024a9188" target="_blank" class="hover:text-white hover:-translate-y-1 transition-all duration-300 flex items-center gap-2 text-lg">
+                    <i class="fab fa-linkedin text-xl"></i>
+                    <span class="hidden sm:inline text-sm">LinkedIn</span>
+                </a>
+                <span class="flex items-center gap-2 text-lg">
+                    <i class="fas fa-location-dot text-brand-500"></i>
+                    <span class="text-sm">Pune, India</span>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-16 space-y-20">
+        
+        <!-- Professional Summary -->
+        <section class="animate-fade-in-up">
+            <h2 class="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <span class="w-2 h-8 bg-brand-600 rounded-full inline-block"></span>
+                About Me
+            </h2>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
+                <p class="text-lg leading-relaxed text-slate-600 mb-4">
+                    I am an innovative <strong class="text-slate-900 font-semibold">AI and Data Engineering professional</strong> with a passion for building scalable, intelligent systems. Holding a Master of Computer Applications and currently pursuing an MBA in Marketing, I bring a unique blend of deep technical expertise and strategic business acumen to every project I undertake.
+                </p>
+                <p class="text-lg leading-relaxed text-slate-600">
+                    My core expertise lies in architecting <strong class="text-slate-900 font-semibold">Agentic workflows</strong>, implementing <strong class="text-slate-900 font-semibold">RAG architectures</strong>, and developing robust <strong class="text-slate-900 font-semibold">Data Lakes</strong> using modern technologies like Azure OpenAI, Apache Iceberg, and Spark. Whether it is integrating complex microservices, automating regulatory compliance to reduce review times by 40%, or optimizing industrial operations, I thrive on solving complex problems and delivering data-driven solutions that drive measurable business impact.
+                </p>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section>
+            <h2 class="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <span class="w-2 h-8 bg-brand-600 rounded-full inline-block"></span>
+                Technical Skills
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Skill Card 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="text-brand-600 mb-4 text-2xl"><i class="fas fa-brain"></i></div>
+                    <h3 class="text-xl font-semibold mb-4 text-slate-900">AI & Automation</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-brand-50 text-brand-600 rounded-full text-sm font-medium">Azure OpenAI</span>
+                        <span class="px-3 py-1 bg-brand-50 text-brand-600 rounded-full text-sm font-medium">RAG Architecture</span>
+                        <span class="px-3 py-1 bg-brand-50 text-brand-600 rounded-full text-sm font-medium">Prompt Engineering</span>
+                        <span class="px-3 py-1 bg-brand-50 text-brand-600 rounded-full text-sm font-medium">PyTorch</span>
+                    </div>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="text-brand-600 mb-4 text-2xl"><i class="fas fa-database"></i></div>
+                    <h3 class="text-xl font-semibold mb-4 text-slate-900">Data Engineering</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-sm font-medium">Apache Iceberg</span>
+                        <span class="px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-sm font-medium">Spark</span>
+                        <span class="px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-sm font-medium">SQL</span>
+                        <span class="px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-sm font-medium">Kafka</span>
+                        <span class="px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-sm font-medium">Pandas</span>
+                    </div>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="text-brand-600 mb-4 text-2xl"><i class="fas fa-code"></i></div>
+                    <h3 class="text-xl font-semibold mb-4 text-slate-900">Software Dev</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Python</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Java</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Spring Boot</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Docker</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">REST APIs</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section>
+            <h2 class="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <span class="w-2 h-8 bg-brand-600 rounded-full inline-block"></span>
+                Work Experience
+            </h2>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 space-y-8">
+                <!-- Job 1 -->
+                <div class="relative pl-8 border-l-2 border-slate-200">
+                    <div class="absolute w-4 h-4 bg-brand-500 rounded-full -left-[9px] top-1 border-4 border-white"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
+                        <h3 class="text-xl font-bold text-slate-900">Industrial Engineer Simulation</h3>
+                        <span class="text-sm font-medium text-slate-500 bg-slate-100 px-3 py-1 rounded-full w-fit mt-2 sm:mt-0">Dec 2025 - Oct 2026</span>
+                    </div>
+                    <p class="text-brand-600 font-medium mb-3">Siemens Mobility</p>
+                    <p class="text-slate-600 leading-relaxed">Optimized high-speed rail operations and resolved critical bottlenecks using lean methodology.</p>
+                </div>
+                <!-- Job 2 -->
+                <div class="relative pl-8 border-l-2 border-slate-200">
+                    <div class="absolute w-4 h-4 bg-slate-300 rounded-full -left-[9px] top-1 border-4 border-white"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
+                        <h3 class="text-xl font-bold text-slate-900">Software Engineering Simulation</h3>
+                        <span class="text-sm font-medium text-slate-500 bg-slate-100 px-3 py-1 rounded-full w-fit mt-2 sm:mt-0">Aug 2025</span>
+                    </div>
+                    <p class="text-brand-600 font-medium mb-3">JPMorgan Chase</p>
+                    <p class="text-slate-600 leading-relaxed">Integrated Kafka into Spring Boot microservices and implemented robust transaction validation using Spring Data JPA.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Projects -->
+        <section>
+            <h2 class="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <span class="w-2 h-8 bg-brand-600 rounded-full inline-block"></span>
+                Key Projects
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 group hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-robot text-brand-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Intelligent Regulatory Compliance Agent</h3>
+                    <p class="text-slate-600 leading-relaxed">Architected an Agentic workflow using Azure OpenAI to automate financial report auditing, significantly reducing the manual review time by 40%.</p>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 group hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-network-wired text-brand-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Enterprise Data Lake Platform</h3>
+                    <p class="text-slate-600 leading-relaxed">Built a highly scalable data lake utilizing Apache Iceberg with Spark to enable ACID transactions, reliable data pipelines, and time-travel queries.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Achievements -->
+        <section>
+            <h2 class="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <span class="w-2 h-8 bg-brand-600 rounded-full inline-block"></span>
+                Education & More
+            </h2>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-4">
+                        <div class="mt-1 text-brand-500"><i class="fas fa-graduation-cap"></i></div>
+                        <div>
+                            <strong class="text-slate-900 block md:inline">Master of Computer Applications (MCA)</strong>
+                            <span class="text-slate-600 md:ml-2">Dr. D.Y. Patil University, Pune (2023)</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="mt-1 text-brand-500"><i class="fas fa-book-open"></i></div>
+                        <div>
+                            <strong class="text-slate-900 block md:inline">MBA (Marketing)</strong>
+                            <span class="text-slate-600 md:ml-2">NMIMS CDOE (In Progress)</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="mt-1 text-amber-500"><i class="fas fa-award text-lg"></i></div>
+                        <div>
+                            <strong class="text-slate-900 block md:inline">Achievement</strong>
+                            <span class="text-slate-600 md:ml-2">Round 2 Selection in International Photography Competition</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center border-t border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Priyanka Pawar. All rights reserved.</p>
+            <p class="text-sm">Built with passion and code <i class="fas fa-code text-brand-500 ml-1"></i></p>
+        </div>
+    </footer>
+
+</body>
+</html>
